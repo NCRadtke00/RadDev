@@ -1,3 +1,7 @@
+export const successMessages = [
+    "To complete your registration you will need to verify your email. Check your inbox and spam for the verification email.",
+    "Check your mail for your password reset link.",
+];
 export const languages = [
     "English",
     "Spanish",
@@ -19,7 +23,6 @@ export const currency = [
       "¥ - JPY",
       "¥ - CNY"
 ];
-
 export const countries = [
     { country: "Afghanistan", abbreviation: "AF" },
     { country: "Albania", abbreviation: "AL" },
