@@ -1,11 +1,24 @@
-import React from 'react'
+import { motion } from "framer-motion";
 
-const HomePage = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+interface HomePageProps {
+    
 }
 
+const HomePage: React.FC<HomePageProps> = () => {
+    return (
+        <motion.div
+            initial= "initial"
+            animate= "in"
+            exit= "out"
+            variants={}
+            transition={}
+        >
+            
+        </motion.div>
+    )
+
+}
+
+
 export default HomePage
+
