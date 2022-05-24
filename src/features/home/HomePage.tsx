@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
+import {pageSlide, pageTransition} from "../../utilities/animations"
+import CarouselContainer from "../../components/carousel/CarouselContainer";
+import ProductCategories from "../../features/product/feed/ProductCategories"
+import ProductFeed from "../product/feed/ProductFeed";
+import Header from "../../components/header/Header";
+import Sidebar from "../../components/sidebar/Sidebar";
 
-interface HomePageProps {
-    
-}
+interface HomePageProps {}
 
 const HomePage: React.FC<HomePageProps> = () => {
     return (
@@ -10,9 +14,14 @@ const HomePage: React.FC<HomePageProps> = () => {
             initial= "initial"
             animate= "in"
             exit= "out"
-            variants={}
-            transition={}
+            variants={pageSlide}
+            transition={pageTransition}
         >
+            <Sidebar/>
+            <Header/>
+            <CarouselContainer />
+            <ProductCategories />
+            <ProductFeed />
             
         </motion.div>
     )
