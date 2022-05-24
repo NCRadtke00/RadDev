@@ -1,19 +1,19 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const images = ["BackToSchoolSales.png", "March.png", "giveback.png", "summersale45.png", "freeshipping.png", "FallLine.png", "buyonegetone.png", "boatsboatsboats40.png","Birthday.png", "blackfridaysale.png"]
+const images = ["BackToSchoolSale.png", "March.png", "giveback.png", "summersale45.png", "freeshipping.png", "FallLine.png", "buyonegetone.png", "boatsboatsboats40.png","Birthday.png", "blackfridaysale.png"]
 interface CarouselContainerProps {}
 
  const CarouselContainer: React.FC<CarouselContainerProps>= ({}) => {
   return (
     <Carousel
-    className=""
+    className="sm:m-12 sm:rounded-lg shadow-md overflow-hidden"
     showArrows= {false}
     showStatus= {false}
     infiniteLoop={true}
     autoPlay={true}
     showThumbs= {false}
-    interval= {1000}
+    interval= {4500}
     transitionTime={200}
     >
      
