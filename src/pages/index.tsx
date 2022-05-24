@@ -1,75 +1,19 @@
-import type { NextPage } from 'next'
+import HomePage from "../features/home/HomePage";
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import { observer } from "mobx-react-lite";
 
-const Home: NextPage = () => {
-  return (
-    <div className={styles.container}>
-      <Head>
-        <title>3QTS</title>
-        <meta name="description" content="3QTS created with NextJS" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <div>
-      
-    </div>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to 3QTS
-        </h1>
+interface HomeProps {}
 
-        <p className={styles.description}>
-        We have the best fitting 3/4 length shirts on the market
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://github.com/ncradtke00" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about me my features and works.</p>
-          </a>
-
-          <a href="https://github.com/ncradtke00" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about my works in an interactive way without quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/ncradtke00"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy my previous projects.</p>
-          </a>
-
-          <a
-            href="https://github.com/ncradtke00"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-    <div>
-      <p className="text-center text-xl">This will be an everlasting love, this wil be</p>
-    </div>
-      <footer className={styles.footer}>
-        <a
-          href="https://www.github.com/ncradtke00"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered with{' '}
-          <span className={styles.logo}>
-            Love and Coffee
-          </span>
-        </a>
-      </footer>
-    </div>
-  )
+const Home: React.FC<HomeProps> = () => {
+ return (
+   <>
+   <Head>
+     <title> RadDev </title>
+   </Head>
+     <HomePage/>
+   </>
+ )
 }
 
-export default Home
+export default observer(Home);
+
