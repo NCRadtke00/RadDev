@@ -7,7 +7,14 @@ interface CarouselContainerProps {}
  const CarouselContainer: React.FC<CarouselContainerProps>= ({}) => {
   return (
     <Carousel
-
+    className=""
+    showArrows= {false}
+    showStatus= {false}
+    infiniteLoop={true}
+    autoPlay={true}
+    showThumbs= {false}
+    interval= {1000}
+    transitionTime={200}
     >
      
       {images.map((image, index) => (
