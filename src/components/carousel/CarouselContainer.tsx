@@ -9,8 +9,10 @@ interface CarouselContainerProps {}
     <Carousel
 
     >
-     {/* images will go here, will map and call each index */}
-   
+     
+      {images.map((image, index) => (
+        <img key={index} src={`/images/slides/${image}`} alt="carousel"/>
+        ))}
     </Carousel>
   )
 }
