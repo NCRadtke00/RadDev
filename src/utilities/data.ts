@@ -4,8 +4,8 @@ export const notifications = [
 ]
 export const links = [
     { title:"What makes us different", list:["Materials", "Quality","The 'Blogest' blog", "Donate", "Our Causes", "Give-Back", ]},
-    { title:"Come work with us", list:["Be an independent Designer","Our Careers", "Give Back Program", "3rd-Party Sales", "3rd Party Sellers" ]},
     { title:"Issues? Contact us", list:["Your Account", "Your Order", "Returns", "Shipping Rates","Sales policy", "More help" ]},
+    { title:"Come work with us", list:["Be an independent Designer","Our Careers", "Give Back Program", "3rd-Party Sales", "3rd Party Sellers" ]},
     { title:"Get to know us", list:[  "Customer Service: Nicole ", "HR: 'Toby' ", "COO: Nick ", "CIO: Nikolaus ","CFO: Nikolai ","CEO: Nicholas ",  ]}
 ]
 export const successMessages = [
