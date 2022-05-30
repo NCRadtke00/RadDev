@@ -1,3 +1,8 @@
+export const links = [
+    { title:"What makes us different", list:["Materials","Quality","Independent Designers","Our Causes", "Give-Back", "" ]},
+    { title:"Come work with us", list:["Be a Designer","Careers", "Give Back Program", "3rd-Party Sales" ]},
+    { title:"Get to know us", list:["CEO: Nicholas R","CFO: Nicky R", "CIO: Nick R", "COO: N. Christopher R" ]}
+]
 export const successMessages = [
     "To complete your registration you will need to verify your email. Check your inbox and spam for the verification email.",
     "Check your mail for your password reset link.",
