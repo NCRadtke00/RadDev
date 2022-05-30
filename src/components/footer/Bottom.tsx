@@ -1,5 +1,6 @@
 import React from 'react'
-
+import DropDown from '../dropdown/DropDown';
+import {currency, languages} from "../../utilities/data";
 interface FooterBottomProps {
     
 }
@@ -16,10 +17,11 @@ const FooterBottom: React.FC<FooterBottomProps> = () => {
                 </a>
             </span>
             <span className="ml-auto flex items-center">
-                <a className="transition-colors duration-200 py-2 pr-8 pl-4
-                    whitespace-nowrap first-of-type:pt-3 last-of-type:pb-3 hover:bg-gray-100">
-                    Currency
-                </a>
+               <DropDown
+               className="footer__dropdown"
+               items={languages}
+               defaultItem={languages[0]}
+               />
                 <a className="transition-colors duration-200 py-2 pr-8 pl-4
                     whitespace-nowrap first-of-type:pt-3 last-of-type:pb-3 hover:bg-gray-100">
                 Language

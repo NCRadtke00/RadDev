@@ -1,5 +1,4 @@
-import { MouseEventHandler } from 'react"
-import React from 'react'
+import { MouseEventHandler } from 'react';
 
 interface DropDownItemProps {
     onClick: MouseEventHandler<HTMLLIElement>;
