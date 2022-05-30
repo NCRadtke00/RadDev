@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 
 interface OutsideClickProps {
-    open: boolean;
+    opened: boolean;
     onClose: ()=>void;
 }
 
