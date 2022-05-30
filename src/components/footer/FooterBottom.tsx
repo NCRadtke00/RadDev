@@ -12,7 +12,7 @@ const FooterBottom: React.FC<FooterBottomProps> = () => {
                <a href="https://github.com/NCRadtke00" className="text-[#2a008c] transition-all
                     duration-100 border-b border-r border-full border-[#2a008c] hover:text-[#f07] 
                     hover:border-[#f07] hover:border-t hover:border-l hover:border-dotted ">
-                         3QTees 
+                         {/* 3QTees  */}
                 </a>
             </span>
             <span className="ml-auto flex items-center">

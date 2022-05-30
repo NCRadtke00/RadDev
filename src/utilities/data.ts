@@ -1,12 +1,12 @@
 export const notifications = [
-     {title: "Refund Disclaimer", subtitle: "You have 45 days from date of purchase to submit refund.",},
-    {title: "Sale of the month!", subtitle: "This months all member use code GiveIt2MeBaby for free shipping!"}
+     {title: "Refund Disclaimer:", subtitle: "You have 45 days from date of purchase to submit refund.",},
+    {title: "Sale of the month:", subtitle: "This months all member use code GiveIt2MeBaby for free shipping!"}
 ]
 export const links = [
-    { title:"What makes us different", list:["Materials","Quality","Independent Designers","Our Causes", "Give-Back" ]},
-    { title:"Come work with us", list:["Be a Designer","Careers", "Give Back Program", "3rd-Party Sales" ]},
-    { title:"Come work with us", list:["Be a Designer","Careers", "Give Back Program", "3rd-Party Sales" ]},
-    { title:"Get to know us", list:["CEO: Nicholas R","CFO: Nicky R", "CIO: Nick R", "COO: N. Christopher R" ]}
+    { title:"What makes us different", list:["Materials", "Quality","The 'Blogest' blog", "Donate", "Our Causes", "Give-Back", ]},
+    { title:"Come work with us", list:["Be an independent Designer","Our Careers", "Give Back Program", "3rd-Party Sales", "3rd Party Sellers" ]},
+    { title:"Issues? Contact us", list:["Your Account", "Your Order", "Returns", "Shipping Rates","Sales policy", "More help" ]},
+    { title:"Get to know us", list:[  "Customer Service: Nicole ", "HR: 'Toby' ", "COO: Nick ", "CIO: Nikolaus ","CFO: Nikolai ","CEO: Nicholas ",  ]}
 ]
 export const successMessages = [
     "To complete your registration you will need to verify your email. Check your inbox and spam for the verification email.",
