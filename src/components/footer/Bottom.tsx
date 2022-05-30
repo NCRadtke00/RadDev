@@ -23,10 +23,11 @@ const FooterBottom: React.FC<FooterBottomProps> = () => {
                items={languages}
                defaultItem={languages[0]}
                />
-                <a className="transition-colors duration-200 py-2 pr-8 pl-4
-                    whitespace-nowrap first-of-type:pt-3 last-of-type:pb-3 hover:bg-gray-100">
-                Language
-                </a>
+               <DropDown
+               className="footer__dropdown"
+               menu="top-auto bottom-full mb-2"
+               items={currency}
+               defaultItem={currency[0]}/>
             </span>
         </div>
     )
