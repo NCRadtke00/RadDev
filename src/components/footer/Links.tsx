@@ -8,14 +8,16 @@ const Links: React.FC<LinksProps> = () => {
     return (
         <div className="p-12 grid sm:grid-cols-2 lg:grid-cols-3">
             {links.map((link)=>(
-                <div>
-                    <h6>
+                <div key={link.title} className="mb-4">
+                    <h6 className="mb-2 whitespace-nowrap">
                         {link.title}
                     </h6>
                     <ul>
-                        { <li>
+                        {link.list.map((item,index) => (
+                           <li>
                             {link.list}
-                        </li>}
+                        </li> 
+                        )) }
                     </ul>
                 </div>
             ))}
