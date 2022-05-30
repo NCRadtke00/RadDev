@@ -19,6 +19,7 @@ const FooterBottom: React.FC<FooterBottomProps> = () => {
             <span className="ml-auto flex items-center">
                <DropDown
                className="footer__dropdown"
+               menu="top-auto bottom-full mb-2"
                items={languages}
                defaultItem={languages[0]}
                />
