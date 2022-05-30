@@ -8,11 +8,11 @@ interface FooterProps {
 
 const Footer: React.FC<FooterProps> = () => {
     return (
-        <div className="mt-auto bg-[#d8d8d8] flex flex-col w-full sm:pl-24 mx-auto">
-            {/* <Disclaimer />
+        // note to self once sidebar is done re-add this padding other wise it will look weird* sm:pr-24
+        <div className="mt-auto bg-[#d8d8d8] flex flex-col w-full  mx-auto"> 
+            <Disclaimer />
             <Links />
-            <FooterBottom /> */}
-            footer stuff hereeeeeeeeeeeee
+            <FooterBottom />
         </div>
     )
 }

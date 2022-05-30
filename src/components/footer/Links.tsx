@@ -6,17 +6,18 @@ interface LinksProps {
 
 const Links: React.FC<LinksProps> = () => {
     return (
-        <div className="p-12 grid sm:grid-cols-2 lg:grid-cols-3">
+        <div className="p-12 grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
             {links.map((link)=>(
-                <div key={link.title} className="mb-4">
-                    <h6 className="mb-2 whitespace-nowrap">
+                <div key={link.title} className="mb-4 text-center">
+                    <h5 className="mb-2 whitespace-nowrap cursor-pointer">
                         {link.title}
-                    </h6>
+                    </h5>
                     <ul>
                         {link.list.map((item,index) => (
-                           <li>
-                            {link.list}
-                        </li> 
+                           <li key={index} className=" mb-2 text-sm text-center opacity-70 text-[#1a1a1a]
+                                transition-all duration-100 whitespace-nowrap hover:opacity-100 cursor-pointer">
+                            {item}
+                            </li> 
                         )) }
                     </ul>
                 </div>
