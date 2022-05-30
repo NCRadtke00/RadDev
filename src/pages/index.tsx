@@ -8,7 +8,7 @@ const Home: React.FC<HomeProps> = () => {
  return (
    <>
    <Head>
-     <title> RadDev </title>
+     <title> 3QTees </title>
    </Head>
      <HomePage/>
    </>
