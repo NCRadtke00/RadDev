@@ -5,7 +5,7 @@ interface SidebarProps {}
 const Sidebar: React.FC<SidebarProps> = () => {
     return (
         <div>
-            asdasdasd
+            side bar
         </div>
     )
 }
