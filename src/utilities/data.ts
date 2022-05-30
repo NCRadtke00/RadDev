@@ -1,5 +1,10 @@
+export const notifications = [
+     {title: "Refund Disclaimer", subtitle: "You have 45 days from date of purchase to submit refund.",},
+    {title: "Sale of the month!", subtitle: "This months all member use code GiveIt2MeBaby for free shipping!"}
+]
 export const links = [
-    { title:"What makes us different", list:["Materials","Quality","Independent Designers","Our Causes", "Give-Back", "" ]},
+    { title:"What makes us different", list:["Materials","Quality","Independent Designers","Our Causes", "Give-Back" ]},
+    { title:"Come work with us", list:["Be a Designer","Careers", "Give Back Program", "3rd-Party Sales" ]},
     { title:"Come work with us", list:["Be a Designer","Careers", "Give Back Program", "3rd-Party Sales" ]},
     { title:"Get to know us", list:["CEO: Nicholas R","CFO: Nicky R", "CIO: Nick R", "COO: N. Christopher R" ]}
 ]
