@@ -16,7 +16,10 @@ const DropDown: React.FC<DropDownProps>= ({className, items, defaultItem, menu})
     const [selected, setSelected] = useState(defaultItem);
     return (
         <OutsideClick open={active} onClose={() => setActive(false)}>
-            <span className={`py-[5px] pr-[2.5px] pl-[10px] bg-white shadow-md rounded-lg text-sm mr-4 flex items-center cursor-pointer relative ${className}`} onClick={(e)=> {setActive((active) => !active);}}> {selected} <KeyboardArrowDown/></span> 
+            <span className={`py-[5px] pr-[2.5px] pl-[10px] bg-white shadow-md rounded-lg text-sm mr-4 flex items-center cursor-pointer relative ${className}`} onClick={(e)=> {
+                e.preventDefault();
+                e.stopPropagation();
+                setActive((active) => !active);}}> {selected} <KeyboardArrowDown className={` opacity-75 !transition-transform !duration-200 transform rotate-0 scale-x-90 scale-y-95 ${active && "-rotate-180 scale-x-90 scale-y-95"}`}/></span> 
         </OutsideClick>
     )
 }
