@@ -1,6 +1,10 @@
-# 3QTS, an ecommerce website for 3/4 Length Shirts
+# 3Quarters, an ecommerce website for 3/4 Length Shirts
 
-Website made with NextJs, TailwindCSS, Firebase, Stripe
+- This store is still a W.I.P. Scroll down for images
+
+- 30 May 22'
+-- Working Carousel, Custom made banners, Footer inplace
+
 
 # Hosted site
 
@@ -25,6 +29,11 @@ Website made with NextJs, TailwindCSS, Firebase, Stripe
 - Firebase
 - Stripe
 
+# Images
+30 May 22'
+![workingCarouselAndFooterInPlace](https://user-images.githubusercontent.com/65512131/170956809-275560fc-ff91-42d5-b3fb-8efb1686b688.png)
+
+
 # How to set up project
 
 > First clone this repository to your desktop.
@@ -33,3 +42,4 @@ Website made with NextJs, TailwindCSS, Firebase, Stripe
 >
 > > You will likely hit an issue as I have the Keys for my project hidden. You will need to add a file `.env.local` and get your own cd-keys for the project.
 > > Otherwise you can check out the working project at <a href="https://github.com/ncradtke00" > This link will eventually be linked to the real project</a>
+
