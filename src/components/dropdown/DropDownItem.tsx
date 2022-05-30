@@ -2,14 +2,15 @@ import { MouseEventHandler } from 'react"
 import React from 'react'
 
 interface DropDownItemProps {
-    
+    onClick: MouseEventHandler<HTMLLIElement>;
+    item:string;
 }
 
-const DropDownItem: React.FC<DropDownItemProps> = (click, item) => {
+const DropDownItem: React.FC<DropDownItemProps> = ({onClick, item}) => {
     return (
-        <div>
-            
-        </div>
+        <li onClick={this.onClick}>
+            {item}
+        </li>
     )
 }
 
