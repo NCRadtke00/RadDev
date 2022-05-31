@@ -1,4 +1,4 @@
-import {AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import { AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import SideBar from "../sidebar/Sidebar"
 import Header from "../header/Header"
 import Footer from "../footer/Footer"
@@ -18,7 +18,7 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({ children }) => {
                 </AnimateSharedLayout>
                 </AnimatePresence>
             </div> 
-            <div className="mt-auto mb-20">
+            <div className="mt-auto">
                 <Footer />
             </div>
         </div>
