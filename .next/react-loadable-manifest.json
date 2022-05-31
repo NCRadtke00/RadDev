@@ -1,1 +1,8 @@
-{}
+{
+  "..\\components\\sidebar\\Sidebar.tsx -> react-tooltip": {
+    "id": "..\\components\\sidebar\\Sidebar.tsx -> react-tooltip",
+    "files": [
+      "static/chunks/node_modules_react-tooltip_dist_index_es_js.js"
+    ]
+  }
+}

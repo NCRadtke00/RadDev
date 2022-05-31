@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST={}
+self.__REACT_LOADABLE_MANIFEST={"..\\components\\sidebar\\Sidebar.tsx -> react-tooltip":{"id":"..\\components\\sidebar\\Sidebar.tsx -> react-tooltip","files":["static/chunks/node_modules_react-tooltip_dist_index_es_js.js"]}}
