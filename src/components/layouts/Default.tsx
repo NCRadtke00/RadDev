@@ -10,7 +10,7 @@ const DefaultLayout: React.FC<DefaultLayoutProps> = ({ children }) => {
     return (
         <div className="w-screen min-h-screen relative bg-[#fafafa] flex flex-col">
            <SideBar />
-           <div className="sm:pl-24 w-full max-w-screen-1xl mx-auto flex-grow flex flex-col">
+           <div className="sm:pr-24 w-full max-w-screen-1xl mx-auto flex-grow flex flex-col">
             <AnimatePresence exitBeforeEnter>
                 <AnimateSharedLayout>
                     <Header />
