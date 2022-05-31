@@ -18,9 +18,9 @@ const HomePage: React.FC<HomePageProps> = () => {
             variants={pageSlide}
             transition={pageTransition}
         >
-           
-            <Header/>
-            <CarouselContainer /> <Sidebar />
+            <Sidebar />
+            <Header/> 
+            <CarouselContainer /> 
             <ProductCategories />
             <ProductMain />
             <Footer/>
