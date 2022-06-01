@@ -355,3 +355,4 @@ tailwind.config.js
 postcss.config.js
 next-env.d.ts
 tsconfig.json
+.next 
