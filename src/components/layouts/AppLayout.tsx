@@ -19,8 +19,8 @@ const AppLayout: React.FC<AppLayoutProps> = ({children}) => {
     }, [appLoading]);
     return (
         <>
-        <TopOfPage/>
-         <LoadingBar ref={loadingBar} height={3} color="#f07" shadow={true} />
+        <TopOfPage />
+         <LoadingBar ref={loadingBar} height={3} color="#eed0f9" shadow={true} />
          {children}
         </>
     )
