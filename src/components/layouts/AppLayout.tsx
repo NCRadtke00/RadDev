@@ -2,7 +2,7 @@ import {observer} from "mobx-react-lite"
 import {useEffect, useRef} from "react"
 import {useStore} from "../../stores/store"
 import LoadingBar from 'react-top-loading-bar';
-
+import TopOfPage from "./TopScroll"
 interface AppLayoutProps {
     
 }
@@ -19,6 +19,7 @@ const AppLayout: React.FC<AppLayoutProps> = ({children}) => {
     }, [appLoading]);
     return (
         <>
+        <TopOfPage/>
          <LoadingBar ref={loadingBar} height={3} color="#f07" shadow={true} />
          {children}
         </>

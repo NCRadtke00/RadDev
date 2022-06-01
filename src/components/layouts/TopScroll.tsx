@@ -8,11 +8,15 @@ interface TopScrollProps {
 
 const TopScroll: React.FC<TopScrollProps> = () => {
     const {pathname} = useRouter();
-    
+    useEffect(() =>{
+        window.scroll({
+            top:0,
+            left:0,
+            behavior:"smooth",
+        });
+    }, [pathname]);
     return (
-        <div>
-            
-        </div>
+    null
     )
 }
 
