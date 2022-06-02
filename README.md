@@ -31,7 +31,7 @@
 
 # Images
 1 June 22'
-[withSidebarAndCurrencyOpen](https://user-images.githubusercontent.com/65512131/171562225-5fefbe65-85d6-4392-8222-2d5a2ce08ce0.png)
+![withSidebarAndCurrencyOpen](https://user-images.githubusercontent.com/65512131/171562225-5fefbe65-85d6-4392-8222-2d5a2ce08ce0.png)
 30 May 22'
 ![workingCarouselAndFooterInPlace](https://user-images.githubusercontent.com/65512131/170956809-275560fc-ff91-42d5-b3fb-8efb1686b688.png)
 
