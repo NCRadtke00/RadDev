@@ -1,13 +1,13 @@
-import React from 'react'
+import { categories } from "../../../utilities/data"
 
 interface ProductCategoriesProps {
     
 }
 
-const ProductCategories: React.FC<ProductCategoriesProps>= () => {
+const ProductCategories: React.FC<ProductCategoriesProps> = () => {
     return (
-        <div>
-            
+        <div >
+            {categories.map((category, index) => category)}
         </div>
     )
 }
