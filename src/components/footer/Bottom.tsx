@@ -7,7 +7,7 @@ interface FooterBottomProps {
 
 const FooterBottom: React.FC<FooterBottomProps> = () => {
     return (
-        <div className="py-5 px-12 flex items-center bg-[#eaeaea] border-t border-[rgba(7, 7, 13, 0.05)]">
+        <div className="py-2 px-12 flex items-center border-[rgba(7, 7, 13, 0.05)]">
             <span className="text-sm whitespace-nowrap opacity-70 ml-4">
                  May 2022 |\|
                <a href="https://github.com/NCRadtke00" className="ml-2 text-[#2a008c] transition-all

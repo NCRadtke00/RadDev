@@ -8,7 +8,7 @@ const BackButton: React.FC<BackButtonProps> = () => {
   return (
     <>
       {router.pathname !== "/" && (
-        <button  className="mr-4 sm:mr-auto py-[0.33rem] px-[0.66rem] bg-white shadow-md rounded-lg text-sm relative" onClick={() => router.back()}>
+        <button  className="mr-4 sm:mr-auto py-[0.33rem] px-[0.66rem] bg-slate-200 shadow-md rounded-lg text-sm relative" onClick={() => router.back()}>
           Back
         </button>
       )}

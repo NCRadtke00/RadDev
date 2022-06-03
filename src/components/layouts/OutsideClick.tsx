@@ -5,7 +5,7 @@ interface OutsideClickProps {
     onClose: ()=>void;
 }
 
-const OutsideClick: React.FC<OutsideClickProps> = ({opened, onClose, children}) => {
+const OutsideClick: React.FC<OutsideClickProps> = ({opened, onClose, children }) => {
     const ref = useRef<HTMLDivElement>(null);
     useEffect(() => {
         const checkIfOutsideClick = (e:any) =>{
