@@ -1,9 +1,12 @@
 export const categories = [
     "all products",
+    "pro sports",
+    "collegiate sports",
     "men's clothing",
     "women's clothing",
     "boy's clothing",
     "girl's clothing",
+    "sale item's",
 ]
 export const notifications = [
      {title: "Refund Disclaimer:", subtitle: "You have 45 days from date of purchase to submit refund.",},
