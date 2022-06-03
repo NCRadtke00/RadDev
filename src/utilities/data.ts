@@ -1,3 +1,10 @@
+export const categories = [
+    "all",
+    "men",
+    "women",
+    "boys",
+    "girls",
+]
 export const notifications = [
      {title: "Refund Disclaimer:", subtitle: "You have 45 days from date of purchase to submit refund.",},
     {title: "Sale of the month:", subtitle: "This months all member use code GiveIt2MeBaby for free shipping!"}
