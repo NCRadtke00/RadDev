@@ -36,12 +36,12 @@ export const languages = [
     "Arabic",
 ];
 export const currency = [
-      "$ - USD", 
-      "€ - EUR", 
-      "£ - GBP",
-      "₹ - INR", 
-      "¥ - JPY",
-      "¥ - CNY"
+      "$-USD", 
+      "€-EUR", 
+      "£-GBP",
+      "₹-INR", 
+      "¥-JPY",
+      "¥-CNY"
 ];
 export const countries = [
     { country: "Afghanistan", abbreviation: "AF" },
