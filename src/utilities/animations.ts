@@ -16,3 +16,17 @@ export const pageTransition = {
     type: "tween",
     duration: 0.2,
 }
+export const pageZoom = {
+    initial:{
+        opacity:0,
+        scale:0.95,
+    },
+    in:{
+        opacity:1,
+        scale:1,
+    },
+    out:{
+        opacity:0,
+        scale: 0.95,
+    },
+};
