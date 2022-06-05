@@ -18,6 +18,7 @@ class ProductStore {
         return Array.from(this.productRegistery.values()).reduce(
             (total, product) => product.quantity + total, 0);
     }
+    
 }
 
 export default ProductStore;
