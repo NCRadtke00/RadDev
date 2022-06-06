@@ -2,10 +2,12 @@ export const categories = [
     "all products",
     "pro sports",
     "collegiate sports",
-    "men's clothing",
-    "women's clothing",
-    "boy's clothing",
-    "girl's clothing",
+    "school sports",
+    "club sports",
+    "freelance designer",
+    "contest winners",
+    "random leftovers",
+    "support a charity",
     "sale item's",
 ]
 export const notifications = [
