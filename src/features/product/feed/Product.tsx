@@ -15,6 +15,7 @@ interface ProductProps {
 const Product: React.FC<ProductProps> = (product) => {
     const router = useRouter();
     const { loadProduct, selectedProduct, removeSelectedProduct} = useStore().productStore;
+
     return (
         <motion.div 
             initial="initial"
@@ -23,7 +24,7 @@ const Product: React.FC<ProductProps> = (product) => {
             transition={pageTransition}
             variants={pageZoom}
             layout
-            onClick={ () => {router.push(`/product/${product.id}`)}}
+            onClick={async () => {router.push(`/product/${product.id}`)}}
             className="w-3/4 bg-white rounded0lg shadow-md flex flex-col transition-all duration-200 transform hover:scale-110 hover:drop-shadow-lg"
         >
             <ProductPicture product={product} />
