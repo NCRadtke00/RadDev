@@ -8,9 +8,11 @@ interface ProductCoverProps {
 
 const ProductCover: React.FC<ProductCoverProps> = () => {
 
-return (
-    <div></div>
-)
+    return (
+        <motion.div>
+            <Image layout="fill" objectFit="contain" src={image} alt = {title} className=" absolute p-4"/>
+        </motion.div>
+    )
 }
 
 export default observer(ProductCover);
