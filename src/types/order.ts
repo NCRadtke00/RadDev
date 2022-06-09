@@ -6,7 +6,7 @@ export interface Order {
     amount: number;
     created: number;
     items: Product[];
-    tyoe: "card" | "cash" ;
+    type: "card" | "cash" ;
 }
 
 export class Order implements Order {
