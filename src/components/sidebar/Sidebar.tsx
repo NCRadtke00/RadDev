@@ -1,7 +1,9 @@
 import {observer} from 'mobx-react-lite';
 import dynamic from "next/dynamic";
 import {useStore} from "../../stores/store"
-import Logo from "./Logo"
+import SideLogo from "./SideLogo"
+import SideMenu from './SideMenu';
+import SideUser from './SideUser';
 
 const ReactTooltip = dynamic(() => import("react-tooltip"), { ssr: false });
 
@@ -13,7 +15,9 @@ const Sidebar: React.FC<SidebarProps> = () => {
 
     return (
         <div  className={`wr-20 sm:w-24 h-screen fixed z-50 top-0 right-0 shadow-lg bg-white flex flex-col justify-between items-center py-6 sm:py-12 transition-all duration-200 transform translate-x-20 sm:translate-x-[0px] ${sidebarActive && "translate-x-0"}`}>
-            <Logo />
+            <SideLogo />
+            <SideMenu />
+            <SideUser />
             <ReactTooltip
                 place="left"
                 id="sidebarToolTip"
