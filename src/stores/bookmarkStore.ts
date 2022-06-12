@@ -28,7 +28,12 @@ class BookmarkStore {
     get totalBookmarks(){
         return this.bookmarkRegistery.size;
     }
-    addBookmark = (product: Product) => {}
+    addBookmark = (product: Product) => {
+        const productExists = this.bookmarkRegistery.has(product.id);
+        if (!productExists) {
+            this.bookmarkRegistery.set(product.id, product);
+        }
+    };
     removeBookmark = (id: number) => {}
 }
 export default BookmarkStore;
