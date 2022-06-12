@@ -32,13 +32,53 @@ class CartStore {
             .toFixed(2)
         );
       }
-    get cartTotalItems(){
-
+      get cartTotalItems() {
+        return Array.from(this.cartRegistery.values()).reduce(
+          (total, product) => product.quantity + total,
+          0
+        );
+      }
+      addToCart = (product: Product) => {
+        const item = this.cartRegistery.get(product.id);
+    
+        if (typeof item === "undefined") {
+          this.cartRegistery.set(product.id, product);
+        } else {
+          item.quantity += 1;
+          this.cartRegistery.set(item.id, item);
+        }
+    
+        window.localStorage.setItem("cart", JSON.stringify(this.cartRegistery));
+      };
+      removeFromCart = (id: number) => {
+        const item = this.cartRegistery.get(id);
+    
+        if (typeof item === "undefined") {
+          toast.error("This Item Is Not Found In Your Cart");
+          return;
+        }
+    
+        if (item.quantity > 1) {
+          item.quantity -= 1;
+          this.cartRegistery.set(item.id, item);
+        } else {
+          this.cartRegistery.delete(id);
+        }
+      };
+    
+      removeAllItems = (id: number) => {
+        const item = this.cartRegistery.get(id);
+    
+        if (typeof item === "undefined") {
+          toast.error("This Item Is Not Found In Your Cart");
+          return;
+        }
+    
+        this.cartRegistery.delete(id);
+      };
+    
+      clearCart = () => {
+        this.cartRegistery.clear();
+      };
     }
-    addToCart = () => {}
-    removeFromCart = () => {}
-    removeAllItems = () => {}
-    clearCart = () => {}
-}
-
 export default CartStore
