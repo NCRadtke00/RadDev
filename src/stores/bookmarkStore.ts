@@ -23,11 +23,12 @@ class BookmarkStore {
         );
     }
     get bookmarks(){
-return null;
+        return Array.from(this.bookmarkRegistery.values());
     }
     get totalBookmarks(){
-return null;
+        return this.bookmarkRegistery.size;
     }
-    addBookmark = () => {}
-    removeBookmark = () => {}
+    addBookmark = (product: Product) => {}
+    removeBookmark = (id: number) => {}
 }
+export default BookmarkStore;
