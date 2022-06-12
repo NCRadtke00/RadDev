@@ -19,12 +19,19 @@ class CartStore {
             }
         );
     }
-    get cart(){
-
-    }
-    get cartTotal(){
-
-    }
+    get cart() {
+        return Array.from(this.cartRegistery.values());
+      }
+      get cartTotal() {
+        return parseInt(
+          Array.from(this.cartRegistery.values())
+            .reduce(
+              (amount, product) => product.price * product.quantity + amount,
+              0
+            )
+            .toFixed(2)
+        );
+      }
     get cartTotalItems(){
 
     }
