@@ -30,6 +30,8 @@
 - Jest
 
 # Images
+- 11 June 22' Sidebar displaying user, cart, orders, and bookmarks, as well as number of items in cart and number of bookmarked items.
+![cartandbookmarkTotalsDisplaying](https://user-images.githubusercontent.com/65512131/173221708-5a69620f-f560-47f5-89e2-0f56a4aa8de4.png)
 - 4 June 22' product card, and categories tab in place, sidebar working! 
 ![mob1](https://user-images.githubusercontent.com/65512131/172038627-8283e462-c0d2-4cf5-911d-532c7277e538.png)
 ![mob2](https://user-images.githubusercontent.com/65512131/172038628-9ea0d118-787c-47d4-9220-5934810dbf98.png)
