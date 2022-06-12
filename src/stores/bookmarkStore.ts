@@ -34,6 +34,13 @@ class BookmarkStore {
             this.bookmarkRegistery.set(product.id, product);
         }
     };
-    removeBookmark = (id: number) => {}
+    removeBookmark = (id: number) => {
+        const item = this.bookmarkRegistery.get(id);
+        if (typeof item === "undefined"){
+            toast.error("The Item Is Not Found In Your Bookmarks.");
+            return;
+        }
+        this.bookmarkRegistery.delete(id);
+    }
 }
 export default BookmarkStore;
