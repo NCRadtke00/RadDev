@@ -29,12 +29,18 @@ const TextInput: React.FC<TextInputProps> = ({
                 `} />
             <label 
                 htmlFor={name}
-                className={`absolute ${(value != "" || type == "date") && "active__label"}`} 
+                className={`absolute left-4 top-4 text-base opacity-75 transition-all duration-200 group-focus-within:active__label group-hover:active__label group-active:active__label ${(value != "" || type == "date") && "active__label"}`} 
             >
                 {label}
             </label>
             {touched && error && (
-                <motion.p>
+                <motion.p
+                initial="initial"
+                animate="in"
+                exit="out"
+                variants={errorAnimation}
+                className="py-1 px-2 text-[#f09] text-sm"
+                >
                     {error}
                 </motion.p>
             )}
