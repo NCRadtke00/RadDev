@@ -30,3 +30,17 @@ export const pageZoom = {
         scale: 0.95,
     },
 };
+export const errorAnimation = {
+    initial:{
+        opacity:0,
+        scale:.8,
+    },
+    in:{
+        opacity:1, 
+        scale:1,
+    },
+    out:{
+        opacity:0,
+        scale: .8,
+    },
+}
