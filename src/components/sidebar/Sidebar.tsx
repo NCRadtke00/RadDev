@@ -2,7 +2,7 @@ import {observer} from 'mobx-react-lite';
 import dynamic from "next/dynamic";
 import {useStore} from "../../stores/store"
 import SideLogo from "./SideLogo"
-import SideMenu from './SideMenu';
+import SideMenu from "./SideMenu";
 import SideUser from './SideUser';
 
 const ReactTooltip = dynamic(() => import("react-tooltip"), { ssr: false });

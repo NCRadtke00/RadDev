@@ -1,5 +1,5 @@
-import { SvgIconTypeMap } from "@mui/material/SvgIconTypeMap";
-import { OverridableComponent } from "@mui/core/OverridableComponent";
+import { SvgIconTypeMap  } from '@mui/material';
+import { OverridableComponent } from "@mui/types";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useStore } from "stores/store";
@@ -32,11 +32,10 @@ const SidebarMenuItem: React.FC<SidebarMenuItemProps> = ({
       >
         <Icon
           className={`!text-4xl !transition-all !duration-200
-          transform scale-90 hover:scale-105 ${
-            active
+          transform scale-90 hover:scale-105 ${active
               ? "fill-[#1a1a2c] scale-100"
               : "!fill-[transparent] stroke-1 stroke-[#1a1a2c]"
-          }`}
+            }`}
         />
         {typeof count != "undefined" && (
           <span
