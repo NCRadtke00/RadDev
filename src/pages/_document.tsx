@@ -6,7 +6,7 @@ class Document extends NextDocument {
         <Html lang="en">
             <Head>
                 <meta name="description" content="Web Store" />
-                <link rel="icon" href="" />
+                <link rel="icon" href="/icons/favicon.png" />
             </Head>
             <body>
                 <Main />

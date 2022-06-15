@@ -7,7 +7,7 @@ interface AppLayoutProps {
     
 }
 
-const AppLayout: React.FC<AppLayoutProps> = ({children}) => {
+const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {
     const {appLoading} = useStore().commonStore;
     const loadingBar = useRef<any>(null);
     useEffect(() =>{

@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import "react-toastify/dist/ReactToastify.min.css";
 import AppLayout from '../components/layouts/AppLayout';
 import DefaultLayout from '../components/layouts/Default';
 import { AppProps } from 'next/app';
