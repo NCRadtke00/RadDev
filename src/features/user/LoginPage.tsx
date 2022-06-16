@@ -28,9 +28,54 @@ const LoginPage: React.FC<LoginPageProps> = ({ providers }) => {
     return (
         <CenterLayout>
             <h4>log in</h4>
-            <Form onSubmit={handleSubmit} autoComplete="off" >
+            <Formik
+                validationSchema={validationSchema}
+                initialValues={{ email:"", password:"", error: null}}
+                onSubmit={ async (values, {setErrors}) =>{
+                    const {email, password} = values;
+                    setAppLoading(true);
+                    signIn("credentials",{
+                        email, password, redirect: false,
+                    }).then((res) => {
+                        setErrors({ error:res?.error });
+                    });
+                    setAppLoading(false)
+                }}
+            >
 
-            </Form>
+            {({ handleSubmit, errors }) => (
+          <Form onSubmit={handleSubmit} autoComplete="off">
+            <FormError error={errors.error} />
+            <TextInput name="email" label="Email" type="text" />
+            <PasswordInput name="password" label="Password" />
+            <Button
+              className="w-full uppercase !transform-none mt-4"
+              type="submit"
+              variant="primary"
+            >
+              Log In
+            </Button>
+            <span
+              onClick={() => router.push("/auth/password-reset")}
+              className="text-center text-sm p-2 block mb-4 cursor-pointer"
+            >
+              Need help logging in?
+            </span>
+            <hr className="bg-gray-200 w-11/12 my-2 ml-[5%]" />
+            <Button
+              className="w-full uppercase !transform-none mt-4"
+              variant="secondary"
+              onClick={(e) => {
+                e.preventDefault();
+                router.push("/auth/register");
+              }}
+            >
+              Sign Up
+            </Button>
+            <ProviderButtons providers={providers} />
+          </Form>
+        )}
+            </Formik>
         </CenterLayout>
     )
 }
