@@ -2,7 +2,9 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-interface NotAuthProps {}
+interface NotAuthProps {
+    children?: React.ReactNode;
+}
 
 const NotAuth: React.FC<NotAuthProps> = ({ children }) => {
     const {data: session, status} = useSession();

@@ -2,7 +2,7 @@ import {motion} from "framer-motion";
 import {pageSlide, pageTransition} from "../../utilities/animations";
 
 interface CenterLayoutProps {
-    
+    children?: React.ReactNode;
 }
 
 const CenterLayout: React.FC<CenterLayoutProps> = ({children}) => {

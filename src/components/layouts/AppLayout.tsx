@@ -4,7 +4,7 @@ import {useStore} from "../../stores/store"
 import LoadingBar from 'react-top-loading-bar';
 import TopOfPage from "./TopScroll"
 interface AppLayoutProps {
-    
+    children?: React.ReactNode;
 }
 
 const AppLayout: React.FC<AppLayoutProps> = ({ children }) => {

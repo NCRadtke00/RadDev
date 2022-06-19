@@ -6,6 +6,7 @@ interface ButtonProps
     HTMLButtonElement
   > {
   variant: "primary" | "secondary" | "outlined" | "red";
+  children?: React.ReactNode;
 }
 
 const Button: React.FC<ButtonProps> = ({

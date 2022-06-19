@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react'
 interface OutsideClickProps {
     opened: boolean;
     onClose: ()=>void;
+    children?: React.ReactNode;
 }
 
 const OutsideClick: React.FC<OutsideClickProps> = ({opened, onClose, children }) => {

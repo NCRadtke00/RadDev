@@ -1,9 +1,9 @@
-import { AnimatePresence, AnimateSharedLayout } from "framer-motion";
 import SideBar from "../sidebar/Sidebar"
 import Header from "../header/Header"
 import Footer from "../footer/Footer"
+import { AnimatePresence, AnimateSharedLayout } from "framer-motion";
 interface DefaultLayoutProps {
-    
+    children?: React.ReactNode;
 }
 
 const DefaultLayout: React.FC<DefaultLayoutProps> = ({ children }) => {
