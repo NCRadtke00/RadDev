@@ -1,5 +1,5 @@
 import { makeAutoObservable, reaction } from "mobx";
-import { toast } from "react-toastify";
+import { toast } from 'react-toastify';
 import { Product } from "types/product";
 
 class BookmarkStore {

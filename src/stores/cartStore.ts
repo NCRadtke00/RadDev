@@ -1,6 +1,6 @@
 import {Product} from "../types/product"
 import { makeAutoObservable, reaction } from "mobx"
-import {toast} from "react-toastify"
+import { toast } from 'react-toastify';
 
 class CartStore {
     cartRegistery: Map<number, Product> = process.browser ? new Map(JSON.parse(window.localStorage.getItem("cart") as string)) : new Map();
