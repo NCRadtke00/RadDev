@@ -15,7 +15,7 @@ const DropDown: React.FC<DropDownProps>= ({className, items, defaultItem, menu})
     const [active, setActive] = useState(false);
     const [selected, setSelected] = useState(defaultItem);
     return (
-        <OutsideClick open={active} onClose={() => setActive(false)}>
+        <OutsideClick opened={active} onClose={() => setActive(false)}>
             <span className={`py-[5px] pr-[2.5px] pl-[10px] bg-slate-200 shadow-md rounded-lg text-sm mr-4 flex items-center cursor-pointer relative ${className}`} onClick={(e)=> {
                 e.preventDefault();
                 e.stopPropagation();
